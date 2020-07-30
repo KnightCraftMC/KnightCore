@@ -1,3 +1,3 @@
 # KnightCore
 
-The official core for # KnightCraft
+The official core for KnightCraft
