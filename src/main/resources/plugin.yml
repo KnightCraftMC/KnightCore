@@ -1,0 +1,8 @@
+name: KnightCore
+version: ${project.version}
+main: ml.knightcraft.core.Main
+api-version: 1.16
+load: STARTUP
+authors: [Hoptilic]
+description: Core for KnightCraft
+website: knightcraft.ml
