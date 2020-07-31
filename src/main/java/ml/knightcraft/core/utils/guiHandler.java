@@ -11,10 +11,9 @@ public class guiHandler implements Listener {
     // First gui
     @EventHandler
     public void onMenuClick(InventoryClickEvent e){
-        e.setCancelled(true);
-
         Player p = (Player) e.getWhoClicked();
         if(e.getView().getTitle().equalsIgnoreCase("Select a function")){
+            e.setCancelled(true);
             if(e.getCurrentItem().getType().equals(Material.RED_WOOL)) {
                 p.sendMessage(ChatColor.RED + "It works!");
                 p.closeInventory();
