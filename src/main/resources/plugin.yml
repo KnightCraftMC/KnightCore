@@ -11,3 +11,6 @@ commands:
     description: "Test"
     aliases: p
     usage: </command>
+  credits:
+    description: "Shows the credits for everyone involved in the server"
+    usage: </command>

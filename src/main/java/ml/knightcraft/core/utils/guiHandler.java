@@ -8,6 +8,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 
 public class guiHandler implements Listener {
+    // First gui
     @EventHandler
     public void onMenuClick(InventoryClickEvent e){
         e.setCancelled(true);
