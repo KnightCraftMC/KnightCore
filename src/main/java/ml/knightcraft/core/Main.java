@@ -1,6 +1,6 @@
 package ml.knightcraft.core;
 
-import ml.knightcraft.core.itemstacks.initGUI;
+import ml.knightcraft.core.commands.initGUI;
 import ml.knightcraft.core.utils.LicenseKeyYaml;
 import ml.knightcraft.core.utils.onLoadNoise;
 import org.bukkit.Bukkit;
