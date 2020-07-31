@@ -4,19 +4,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ga.coconutplugins</groupId>
-    <artifactId>PunishmentGUI</artifactId>
+    <groupId>ml.knightcraft</groupId>
+    <artifactId>KnightCore</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>PunishmentGUI</name>
+    <name>KnightCore</name>
 
-    <description>Punishment GUI for KnightCraft</description>
+    <description>Official core for KnightCraft</description>
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    <url>Coconutplugins.ga</url>
+    <url>Knightcraft.ml</url>
 
     <build>
         <plugins>
