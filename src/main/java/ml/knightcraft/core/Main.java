@@ -1,5 +1,6 @@
 package ml.knightcraft.core;
 
+import ml.knightcraft.core.itemstacks.initGUI;
 import ml.knightcraft.core.utils.LicenseKeyYaml;
 import ml.knightcraft.core.utils.onLoadNoise;
 import org.bukkit.Bukkit;
@@ -39,6 +40,7 @@ public final class Main extends JavaPlugin {
 
         // Loading command registration
         logger.info(ChatColor.AQUA + "[CoconutPlugins] " + ChatColor.YELLOW + "Loading Commands");
+        getCommand("punish").setExecutor(new initGUI());
 
 
         // Loading event registration

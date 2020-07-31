@@ -6,3 +6,8 @@ load: STARTUP
 authors: [Hoptilic]
 description: Core for KnightCraft
 website: knightcraft.ml
+commands:
+  punish:
+    description: "Test"
+    aliases: p
+    usage: </command>
