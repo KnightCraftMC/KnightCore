@@ -1,5 +1,6 @@
 package ml.knightcraft.core.commands;
 
+import ml.knightcraft.core.guis.initialGUI;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -17,16 +18,7 @@ public class initGUI implements CommandExecutor {
 
         if(sender instanceof Player){
             Player p = (Player) sender;
-
-            Inventory initGUI = Bukkit.createInventory(p, 9, "Select a function");
-
-            // First Item
-            ItemStack item1 = new ItemStack(Material.RED_WOOL, 1);
-            ItemMeta item1_meta = item1.getItemMeta();
-            item1_meta.setDisplayName(ChatColor.RED + "It works!");
-            item1.setItemMeta(item1_meta);
-            // Add items & add to player
-            initGUI.addItem(item1);
+            Inventory initGUI = initialGUI.initialGUI(p);
             p.openInventory(initGUI);
         }
         return true;

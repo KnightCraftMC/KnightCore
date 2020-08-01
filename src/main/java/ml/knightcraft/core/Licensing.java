@@ -11,6 +11,8 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.UUID;
 
+// If this code gets leaked, yikes
+
 public class Licensing {
 
 	private String licenseKey;
@@ -44,6 +46,7 @@ public class Licensing {
 
 	public boolean register() {
 		log(0, ChatColor.AQUA + "[CoconutPlugins] " + ChatColor.DARK_GREEN + "Connecting to licensing servers...");
+		log(0, ChatColor.AQUA + "[CoconutPlugins] " + ChatColor.DARK_GREEN + "This may potentially take a while! If this does not work for you, and causes a Not Responding error, contact support");
 		ValidationType vt = isValid();
 		if (vt == ValidationType.VALID) {
 			log(1, ChatColor.AQUA + "[CoconutPlugins] " + ChatColor.DARK_GREEN + "License valid!");

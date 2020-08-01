@@ -1,6 +1,7 @@
 package ml.knightcraft.core.commands;
 
 import ml.knightcraft.core.Main;
+import ml.knightcraft.core.utils.dingNoise;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Instrument;
@@ -20,13 +21,13 @@ public class credits implements CommandExecutor {
         if(sender instanceof Player){
             Player p = (Player) sender;
             p.sendMessage(ChatColor.AQUA + "The server is owner by: " + ChatColor.RED + "Vlady");
-            p.playNote(p.getLocation(), Instrument.CHIME, Note.natural(1, Note.Tone.A));
+            dingNoise.dingDing((Player)sender);
 
 
             Bukkit.getScheduler().scheduleSyncDelayedTask(plugin, new Runnable() {
                 public void run() {
                     p.sendMessage(ChatColor.AQUA + "The server is developed by: " + ChatColor.RED + "Hoptilic");
-                    p.playNote(p.getLocation(), Instrument.CHIME, Note.natural(1, Note.Tone.A));
+                    dingNoise.dingDing((Player)sender);
                 }
             }, 40l);
         }
