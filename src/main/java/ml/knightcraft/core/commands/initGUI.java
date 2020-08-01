@@ -25,16 +25,10 @@ public class initGUI implements CommandExecutor {
             ItemMeta item1_meta = item1.getItemMeta();
             item1_meta.setDisplayName(ChatColor.RED + "It works!");
             item1.setItemMeta(item1_meta);
-
-
-
-
+            // Add items & add to player
             initGUI.addItem(item1);
             p.openInventory(initGUI);
         }
-
-
-
         return true;
     }
 }
