@@ -2,8 +2,9 @@ package ml.knightcraft.core;
 
 import ml.knightcraft.core.commands.credits;
 import ml.knightcraft.core.commands.initGUI;
+import ml.knightcraft.core.guiHandlers.punishmentGUI;
 import ml.knightcraft.core.utils.LicenseKeyYaml;
-import ml.knightcraft.core.utils.guiHandler;
+import ml.knightcraft.core.guiHandlers.firstGUI;
 import ml.knightcraft.core.utils.onLoadNoise;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -48,7 +49,8 @@ public final class Main extends JavaPlugin {
 
         // Loading event registration
         logger.info(ChatColor.AQUA + "[CoconutPlugins] " + ChatColor.YELLOW + "Loading Events");
-        getServer().getPluginManager().registerEvents(new guiHandler(), this);
+        getServer().getPluginManager().registerEvents(new firstGUI(), this);
+        getServer().getPluginManager().registerEvents(new punishmentGUI(), this);
 
 
         // Finished loading
