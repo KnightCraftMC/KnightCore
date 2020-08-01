@@ -21,7 +21,7 @@ public class punishmentGUI implements Listener {
                 if (e.getCurrentItem().getType().equals(Material.ARROW)){
                     Inventory initGUI = initialGUI.initialGUI(p);
 
-                    p.sendMessage(ChatColor.RED + "Selected: PunishmentGUI");
+                    p.sendMessage(ChatColor.RED + "Selected: GUI Selection");
                     dingNoise.dingDing(p);
                     p.closeInventory();
                     p.openInventory(initGUI);
