@@ -1,7 +1,6 @@
-package ml.knightcraft.core.guiHandlers;
+package ml.knightcraft.core.punishmentguiSection.guiHandlers;
 
-import ml.knightcraft.core.guis.initialGUI;
-import ml.knightcraft.core.guis.selectMenu;
+import ml.knightcraft.core.punishmentguiSection.guis.selectPlayer;
 import ml.knightcraft.core.utils.dingNoise;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -21,9 +20,9 @@ public class firstGUI implements Listener {
             if (e.getView().getTitle().equalsIgnoreCase("Select a function")) {
                 e.setCancelled(true);
                 if (e.getCurrentItem().getType().equals(Material.RED_WOOL)) {
-                    Inventory selectMenu1 = selectMenu.selectPunish(p);
+                    Inventory selectMenu1 = selectPlayer.selectPunish(p);
 
-                    p.sendMessage(ChatColor.RED + "Selected: PunishmentGUI");
+                    p.sendMessage(ChatColor.RED + "Selected: Player Selection");
                     dingNoise.dingDing(p);
                     p.closeInventory();
                     p.openInventory(selectMenu1);

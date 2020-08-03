@@ -1,4 +1,4 @@
-package ml.knightcraft.core.commands;
+package ml.knightcraft.core.generalSection;
 
 import ml.knightcraft.core.Main;
 import ml.knightcraft.core.utils.dingNoise;

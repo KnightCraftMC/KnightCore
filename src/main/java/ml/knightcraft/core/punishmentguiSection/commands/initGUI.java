@@ -1,16 +1,11 @@
-package ml.knightcraft.core.commands;
+package ml.knightcraft.core.punishmentguiSection.commands;
 
-import ml.knightcraft.core.guis.initialGUI;
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import org.bukkit.Material;
+import ml.knightcraft.core.punishmentguiSection.guis.initialGUI;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.ItemMeta;
 
 public class initGUI implements CommandExecutor {
     @Override

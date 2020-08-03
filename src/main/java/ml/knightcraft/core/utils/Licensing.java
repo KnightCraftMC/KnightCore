@@ -1,4 +1,4 @@
-package ml.knightcraft.core;
+package ml.knightcraft.core.utils;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;

@@ -1,4 +1,4 @@
-package ml.knightcraft.core.guis;
+package ml.knightcraft.core.punishmentguiSection.guis;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -8,17 +8,19 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-public class initialGUI {
+public class selectPunishment {
     public static Inventory initialGUI(Player p){
-        Inventory initGUI = Bukkit.createInventory(p, 9, "Select a function");
+        Inventory selectAPunishment = Bukkit.createInventory(p, 54, "Select a Punishment");
 
-        // First Item
-        ItemStack item1 = new ItemStack(Material.RED_WOOL, 1);
+        // Go back item
+        ItemStack item1 = new ItemStack(Material.ARROW, 1);
         ItemMeta item1_meta = item1.getItemMeta();
-        item1_meta.setDisplayName(ChatColor.RED + "Punishment GUI");
+        item1_meta.setDisplayName(ChatColor.RED + "Go Back");
         item1.setItemMeta(item1_meta);
+
+
         // Add items & add to player
-        initGUI.setItem(4, item1);
-        return initGUI;
+        selectAPunishment.setItem(45, item1);
+        return selectAPunishment;
     }
 }
