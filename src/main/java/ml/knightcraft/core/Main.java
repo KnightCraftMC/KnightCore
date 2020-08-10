@@ -22,6 +22,7 @@ public final class Main extends JavaPlugin {
     public void onEnable() {
         Logger logger = Bukkit.getLogger();
 
+        // Git testing
 
         // Saving config
         logger.info(ChatColor.AQUA + "[CoconutPlugins] " + ChatColor.YELLOW + "Loading/Saving Config");
