@@ -21,8 +21,7 @@ public final class Main extends JavaPlugin {
     @Override
     public void onEnable() {
         Logger logger = Bukkit.getLogger();
-
-        // Git testing
+        
 
         // Saving config
         logger.info(ChatColor.AQUA + "[CoconutPlugins] " + ChatColor.YELLOW + "Loading/Saving Config");
