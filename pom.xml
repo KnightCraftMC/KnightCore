@@ -6,7 +6,7 @@
 
     <groupId>ml.knightcraft</groupId>
     <artifactId>KnightCore</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.1-RE-DEVELOPMENT-EDITION</version>
     <packaging>jar</packaging>
 
     <name>KnightCore</name>
