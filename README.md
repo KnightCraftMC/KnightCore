@@ -1,3 +1,1 @@
-# KnightCore
-
-The official core for KnightCraft
+# Made publicly available as the project is dead
